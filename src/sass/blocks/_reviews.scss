@@ -1,0 +1,35 @@
+.reviews {
+  min-height: 925px;
+  &__wrapper {
+    min-height: 784px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__user-info {
+    margin-left: 62px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 656px;
+  }
+  &__user-name{
+    line-height: normal;
+    font-size: 18px;
+    font-weight: bold;    
+    color: #0d0d0d;
+  }
+  &__user-experience{
+    line-height: normal;
+    margin: 10px 0 19px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #646464;
+  }
+  &__user-desc{
+    line-height: normal;
+    width: 656px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #0d0d0d;
+  }
+}

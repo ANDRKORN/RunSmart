@@ -23,7 +23,7 @@ gulp.task('css:build', function () {
         .pipe(rename({ suffix: '.min' }))
         .pipe(cleanCSS())
         .pipe(gulp.dest('./src/css'))
-        .pipe(webserver.reload({ stream: true }));/*  */
+        .pipe(webserver.reload({ stream: true }));
 });
 gulp.task("watch", function () {
     gulp.watch('./src/sass/**/*.scss', gulp.parallel('css:build'));

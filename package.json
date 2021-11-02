@@ -16,11 +16,14 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "sass": "^1.43.4"
-  }, 
+  },
   "browserslist": [
     "> 1%",
     "maintained node versions",
     "not dead"
   ],
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "rudy": "0.0.0"
+  }
 }
