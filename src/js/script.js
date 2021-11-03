@@ -81,8 +81,7 @@ $(document).ready(function () {
                     email: true
                 },
 
-            },
-            
+            },            
             messages: {
                 name: {
                     required: "Пожуалуйста, введите свое имя",
@@ -121,7 +120,25 @@ $(document).ready(function () {
         return false;
     });
 
+    //smooth scrool
+    $(window).scroll(function(){
+        if($(this).scrollTop()>1000){
+            $('.pageup').fadeIn();
+        }else{
+            $('.pageup').fadeOut();
+        }
+    })
 
+    scrollAnimation('a[href^="#up"]');
+    scrollAnimation('a[href^="#catalog"]');
+    function scrollAnimation(attr){
+        $(attr).click(function(){
+        const _href=$(this).attr('href');
+        $('html , body').animate({scrollTop:$(_href).offset().top+'px'});
+        return false;
+    })
+    }
+    
 }); 
  
 
